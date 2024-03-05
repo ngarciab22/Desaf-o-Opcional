@@ -13,3 +13,14 @@ const kelvin = parseFloat(celsius + 273.15)
 const fahrenheit = parseFloat((celsius*9/5)+32)
 //Se crea un alert con ambos resultados
 alert(`La temperatura en Kelvin es de ${kelvin}, la temperatura en Fahrenheit es de ${fahrenheit}.`)
+
+//Se crea variable dias y se le da el valor ingresado por el usuario
+let dias = parseInt(prompt("Ingresa una cantidad de días para calcular su equivalencia"))
+//Se crea constante año
+const año = Math.floor(dias/365)
+//Se crea constante semanas
+const semanas = Math.floor((dias%365)/7)
+//Se crea constante dia
+const dia = Math.floor((dias%365)%7)
+//Se crea un alert con resultados
+alert(`Equivale a ${año} año(s), ${semanas} semana(s) y ${dia} día(s)`)
