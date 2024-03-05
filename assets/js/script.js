@@ -24,3 +24,12 @@ const semanas = Math.floor((dias%365)/7)
 const dia = Math.floor((dias%365)%7)
 //Se crea un alert con resultados
 alert(`Equivale a ${año} año(s), ${semanas} semana(s) y ${dia} día(s)`)
+
+//Se crean las variables nro1 a nro5 y se le da el valor ingresado por el usuario
+let nro1 = parseInt(prompt("Ingresa un número"))
+let nro2 = parseInt(prompt("Ingresa un número"))
+let nro3 = parseInt(prompt("Ingresa un número"))
+let nro4 = parseInt(prompt("Ingresa un número"))
+let nro5 = parseInt(prompt("Ingresa un número"))
+//Se usa la interpolación de variables para sumar y calcular el promedio
+alert(`La suma de todos los números es ${nro1+nro2+nro3+nro4+nro5} y el promedio es ${(nro1+nro2+nro3+nro4+nro5)/5}.`)
